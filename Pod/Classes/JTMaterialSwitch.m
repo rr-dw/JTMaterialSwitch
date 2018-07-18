@@ -86,7 +86,7 @@
       
     case JTMaterialSwitchSizeNormal:
       frame = CGRectMake(0, 0, 40, 30);
-      self.trackThickness = 17.0;
+      self.trackThickness = 9.0;
       self.thumbSize = 24.0;
       break;
       
@@ -104,8 +104,8 @@
   }
   
   trackFrame.size.height = self.trackThickness;
-  trackFrame.size.width = frame.size.width;
-  trackFrame.origin.x = 0.0;
+  trackFrame.size.width = frame.size.width - 10;
+  trackFrame.origin.x = 5.0;
   trackFrame.origin.y = (frame.size.height-trackFrame.size.height)/2;
   thumbFrame.size.height = self.thumbSize;
   thumbFrame.size.width = thumbFrame.size.height;
